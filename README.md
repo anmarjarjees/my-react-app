@@ -1,4 +1,42 @@
-# Getting Started with Create React App
+# Getting Started with Create React App by Creating Tic Tac Toe Game!
+## This Demo is based on React Documentations:
+### [Tutorial: Intro to React](https://reactjs.org/tutorial/tutorial.html#setup-option-1-write-code-in-the-browser)
+#### Anmar Jarjees
+
+1. Make sure you have a recent version of Node.js installed.
+
+2. Follow the installation instructions for Create React App to make a new project. 
+(Notice that I named project/app/repo "my-react-app")
+> npx create-react-app my-react-app
+
+NOTE: Before executing point 3, you can run your app for testing!
+> npm start
+
+3. Delete all files in the src/ folder of the new project. Don't delete the entire src folder, just the original source files inside it
+
+4. Add a file named index.css in the src/ folder 
+[The code for this CSS file](https://codepen.io/gaearon/pen/oWWQNa?editors=0100)
+
+5. Add a file named index.js in the src/ folder
+[The code for this JS code]()
+
+6. Add these three lines to the top of index.js in the src/ folder:
+- import React from 'react';
+- import ReactDOM from 'react-dom/client';
+- import './index.css';
+
+7. Now if you run npm start in the project folder and open http://localhost:3000 in the browser, 
+you should see an empty tic-tac-toe field.
+
+8. Passing Data Through Props: Check my comments in index.js file (Ordered Steps)
+
+9. Making an Interactive Component: Check my comments in index.js file (Ordered Steps)
+
+10. Completing the Game: Check my comments in index.js file (Ordered Steps)
+
+
+
+### Below are the default content of README.md file:
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
