@@ -48,8 +48,8 @@ Second Part: index.js<br />
 - My Second File "index.js" contains the second (final) part (steps) of coding starting from step13 till the end
 - We cannot have two index.js files! That's why I put them to be index1.js for starting then the main final one index.js
 
-### Deploying a React App* to GitHub Pages
-## Before Starting:
+## Deploying a React App* to GitHub Pages
+### Before Starting:
 ### Steps Reference: [React App Deployment](https://create-react-app.dev/docs/deployment/#github-pages)
 These steps assume that:
 - You are already familiar with the basic commands of Git and GitHub<br />
