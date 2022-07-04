@@ -2,6 +2,7 @@
 ## This Demo is based on React Documentations:
 ### [Tutorial: Intro to React](https://reactjs.org/tutorial/tutorial.html#setup-option-1-write-code-in-the-browser)
 #### Anmar Jarjees
+##### You can check the [live demo]() of this repo
 
 1. Make sure you have a recent version of Node.js installed.
 
@@ -18,7 +19,7 @@ NOTE: Before executing point 3, you can run your app for testing!
 [The code for this CSS file](https://codepen.io/gaearon/pen/oWWQNa?editors=0100)
 
 5. Add a file named index.js in the src/ folder
-[The code for this JS code]()
+[The code for this JS code](https://anmarjarjees.github.io/my-react-app/)
 
 6. Add these three lines to the top of index.js in the src/ folder:
 - import React from 'react';
@@ -30,9 +31,9 @@ you should see an empty tic-tac-toe field.
 
 ### NOTE:
 In order to simplify the code and make the comments easy to read,
-I have divided the process of coding into two files:
-First Part: index1.js
-Second Part: index.js
+I have divided the process of coding into two files:<br />
+First Part: index1.js<br />
+Second Part: index.js<br />
 
 8. Passing Data Through Props: Check my comments in index1.js file (Ordered Steps)
 
@@ -49,8 +50,9 @@ Second Part: index.js
 
 ### Deploying a React App* to GitHub Pages
 ## Before Starting:
+### Steps Reference: [React App Deployment](https://create-react-app.dev/docs/deployment/#github-pages)
 These steps assume that:
-- You are already familiar with the basic commands of Git and GitHub
+- You are already familiar with the basic commands of Git and GitHub<br />
 Please refer to my 2 pdf files regarding using Git/GitHub/GitPod 
 - You had already created and initialized your repo in your local computer and connected with your GitHub repo
 
@@ -66,12 +68,14 @@ Please refer to my 2 pdf files regarding using Git/GitHub/GitPod
   "version": "0.1.0",
   "private": true,
   .....
+<br />
 - Add the following property in one of these formats:
 -- For Project Site: https://{username}.github.io/{repo-name}
 -- For User Site: https://{username}.github.io
+<br />
 in my case, it will be: 
 "homepage": "https://anmarjarjees.github.io/my-react-app"
-
+<br />
 so the JSON file:
 {
   "name": "my-app",
@@ -80,14 +84,14 @@ so the JSON file:
   "homepage": "https://anmarjarjees.github.io/my-react-app",
 
 NOTE: Don't forget the the "," at the end, for more info refer to my JSON lectures
-
+<br />
 Now, the React app's package.json file includes a new added property named "homepage".
 
-4. Add the following two porperties to deployment scripts to the package.json file:
-"predeploy": "npm run build",
+4. Add the following two porperties to deployment scripts to the package.json file:<br />
+"predeploy": "npm run build",<br />
 "deploy": "gh-pages -d build",
 
-Below is the default code for "scripts" property:
+Below is the default code for "scripts" property:<br />
 "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -95,7 +99,7 @@ Below is the default code for "scripts" property:
     "eject": "react-scripts eject"
   },
 
-You can add it anywhere:
+You can add it anywhere:<br />
 "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -103,7 +107,7 @@ You can add it anywhere:
     "eject": "react-scripts eject"
   }
   
-  The final code:
+  The final code:<br />
     "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
@@ -117,6 +121,8 @@ Now, the React app's package.json file includes deployment scripts.
 
 5. Deploy the React app to GitHub Pages by running this command:
 > npm run deploy
+<br />
+
 ===
 
 ### Below are the default content of README.md file:
