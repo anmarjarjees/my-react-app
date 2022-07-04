@@ -28,13 +28,96 @@ NOTE: Before executing point 3, you can run your app for testing!
 7. Now if you run npm start in the project folder and open http://localhost:3000 in the browser, 
 you should see an empty tic-tac-toe field.
 
-8. Passing Data Through Props: Check my comments in index.js file (Ordered Steps)
+### NOTE:
+In order to simplify the code and make the comments easy to read,
+I have divided the process of coding into two files:
+First Part: index1.js
+Second Part: index.js
 
-9. Making an Interactive Component: Check my comments in index.js file (Ordered Steps)
+8. Passing Data Through Props: Check my comments in index1.js file (Ordered Steps)
 
-10. Completing the Game: Check my comments in index.js file (Ordered Steps)
+9. Making an Interactive Component: Check my comments in index1.js file (Ordered Steps)
 
+10. Continuing the Game: Check my comments in index1.js file (Ordered Steps)
 
+11. Completing the Game: Check the second part of my comments in the final file index.html
+
+### NOTES:
+- My First File "index1.js" contains the first part (steps) of coding from step1 to step12
+- My Second File "index.js" contains the second (final) part (steps) of coding starting from step13 till the end
+- We cannot have two index.js files! That's why I put them to be index1.js for starting then the main final one index.js
+
+### Deploying a React App* to GitHub Pages
+## Before Starting:
+These steps assume that:
+- You are already familiar with the basic commands of Git and GitHub
+Please refer to my 2 pdf files regarding using Git/GitHub/GitPod 
+- You had already created and initialized your repo in your local computer and connected with your GitHub repo
+
+1. Make sure you are inside the APP folder, then you can start running all the commands listed in the next steps
+
+2. Install the "gh-pages" npm package and save it as a "development dependency"
+> npm install gh-pages --save-dev
+
+3. Modifying the package.json file by adding the homepage property:
+- By default the "package.json" starts with these lines:
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  .....
+- Add the following property in one of these formats:
+-- For Project Site: https://{username}.github.io/{repo-name}
+-- For User Site: https://{username}.github.io
+in my case, it will be: 
+"homepage": "https://anmarjarjees.github.io/my-react-app"
+
+so the JSON file:
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://anmarjarjees.github.io/my-react-app",
+
+NOTE: Don't forget the the "," at the end, for more info refer to my JSON lectures
+
+Now, the React app's package.json file includes a new added property named "homepage".
+
+4. Add the following two porperties to deployment scripts to the package.json file:
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build",
+
+Below is the default code for "scripts" property:
+"scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+
+You can add it anywhere:
+"scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  }
+  
+  The final code:
+    "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  }
+
+Now, the React app's package.json file includes deployment scripts.
+
+5. Deploy the React app to GitHub Pages by running this command:
+> npm run deploy
+===
 
 ### Below are the default content of README.md file:
 
